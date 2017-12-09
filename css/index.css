@@ -17,12 +17,17 @@ button{
 
 #navbar{
     background-color: black;
+    
     width:75%;
+    
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    
     padding: 10px;
+    
     text-align: center;
+    
     z-index:100;
 }
 
@@ -36,30 +41,41 @@ button{
 
 #monitor{
     background-color: lightgrey;
+    
     width: 75%;
     height: 75%;
+    
     margin: auto;
+    
     padding: 20px 20px 0px 20px;
+    
     border-radius: 10px;
+    
     z-index: 10;
 }
 
 #screen{
     background-color: #2a2a2a;
+    
     display:block;
     
     height: 85%;
+    
     overflow-y: auto;
+    
     margin-bottom: 2px;
+    
     padding: 20px;
 }
 
 .btn{
     background-color: #d04e4e;
+    
     display: inline-block;
     float: right;
     
     margin: 5px;
+    
     padding: 10px;
     
     border-radius: 100%;
@@ -71,8 +87,16 @@ button{
     background-color: deepskyblue;
 }
 
+#console{
+    float:left;
+    width: 55%;
+    height: 100%;
+    overflow-y: auto;
+}
+
 .node_1{
     margin:0;
+    
     color:cadetblue;
     text-overflow: wrap;
 }
@@ -85,15 +109,65 @@ button{
 #stand{
     background-color: lightgrey;
     
-    width: 50%;
-    height: 5%;
+    width: 75%;
+    height: 20px;
     
     margin: auto;
-    margin-top: 10px;
+    margin-top: 3px;
     
-    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+    
+    border-radius: 5px;
     
     z-index: 10;
+}
+
+#table-window{
+    background-color: white;
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+#window-topbar{
+    background-color: #EEEEEE;
+    color:grey;
+    font-size: 10pt;
+    padding: 5px;
+    
+    background: -moz-linear-gradient(bottom, #EEEEEE 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, #EEEEEE 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, #EEEEEE 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+#window-topbar span{
+    margin-left: 10px;
+}
+
+.window-btn{
+    float: left;
+    
+    margin-right: 5px;
+    margin-top: 4px;
+    
+    padding: 5px;
+    
+    border-radius: 100%;
+    
+    cursor: pointer;
+}
+
+#window-close{
+    background-color: #FA6152;
+}
+
+#window-maximize{
+    background-color: #FCBE07;
+}
+
+#window-minimize{
+    background-color: #13C730;
 }
 
 @keyframes blink{
