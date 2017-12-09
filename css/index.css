@@ -1,0 +1,100 @@
+body{
+    font-family: 'Segoe UI';
+    letter-spacing: 1px;
+    
+    background-color: white;
+    
+    color: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border-style:none;
+}
+
+#navbar{
+    background-color: black;
+    width:75%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index:100;
+}
+
+#navbar a{
+    color: blanchedalmond;
+}
+
+#navbar a:hover{
+    color: deepskyblue;
+}
+
+#monitor{
+    background-color: lightgrey;
+    width: 75%;
+    height: 75%;
+    margin: auto;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#screen{
+    background-color: #2a2a2a;
+    display:block;
+    
+    height: 85%;
+    overflow-y: auto;
+    margin-bottom: 2px;
+    padding: 20px;
+}
+
+.btn{
+    background-color: #d04e4e;
+    display: inline-block;
+    float: right;
+    
+    margin: 5px;
+    padding: 10px;
+    
+    border-radius: 100%;
+    
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: deepskyblue;
+}
+
+.node_1{
+    margin:0;
+    color:cadetblue;
+    text-overflow: wrap;
+}
+
+#caret{
+    animation: blink 0.8s steps(2, start) infinite;
+    -webkit-animation: blink 0.8s steps(2, start) infinite;
+}
+
+#stand{
+    background-color: lightgrey;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+@keyframes blink{
+    to{visibility:hidden}
+}
+
+@-webkit-keyframes blink{
+    to{visibility:hidden}
+}
