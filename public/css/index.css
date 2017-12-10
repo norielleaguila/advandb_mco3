@@ -15,6 +15,10 @@ button{
     border-style:none;
 }
 
+table{
+    font-size: 9pt;
+}
+
 #navbar{
     background-color: black;
     
@@ -43,7 +47,7 @@ button{
     background-color: lightgrey;
     
     width: 75%;
-    height: 75%;
+    height: 85%;
     
     margin: auto;
     
@@ -59,7 +63,7 @@ button{
     
     display:block;
     
-    height: 85%;
+    height: 87%;
     
     overflow-y: auto;
     
@@ -89,12 +93,20 @@ button{
 
 #console{
     float:left;
-    width: 55%;
+    width: 45%;
     height: 100%;
+}
+
+#nodelog, #tclog{
+    height: 50%;
     overflow-y: auto;
 }
 
-.node_1{
+#nodelog{
+    padding-bottom: 10px;
+}
+
+.node_1, .node_2, .node_3, .tc{
     margin:0;
     
     color:cadetblue;
@@ -107,7 +119,6 @@ button{
 }
 
 #stand{
-    background-color: lightgrey;
     
     width: 75%;
     height: 20px;
@@ -120,12 +131,32 @@ button{
     border-radius: 5px;
     
     z-index: 10;
+    
+
+    border-bottom: 20px solid lightgrey;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 75%;
+
+}
+
+#botStand{
+    background-color: #c1c1c1;
+    width: 75%;
+    height: 5%;
+    margin: auto;
+    
+    border-left: 70px solid #c1c1c1;
+    border-right: 70px solid #c1c1c1;
+    
+    border-radius: 5px;
 }
 
 #table-window{
     background-color: white;
     float: right;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
@@ -134,6 +165,7 @@ button{
     color:grey;
     font-size: 10pt;
     padding: 5px;
+    padding-left:10px;
     
     background: -moz-linear-gradient(bottom, #EEEEEE 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(bottom, #EEEEEE 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -168,6 +200,17 @@ button{
 
 #window-minimize{
     background-color: #13C730;
+}
+
+#window-close:hover, #window-maximize:hover, #window-minimize:hover{
+    background-color:deepskyblue;
+}
+
+#window-content{
+    height:93%;
+    overflow-y: auto;
+    padding-left: 15px;
+    font-size: 8pt;
 }
 
 @keyframes blink{
