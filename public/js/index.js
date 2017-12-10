@@ -4,56 +4,35 @@ db.on('value', snap => {
     var n = 0;
     var x = $("#window-content");
     
-    // create table
-    x.append(
-            "<table>" +
-                "<thead id='table_head" + n + "'>" +
-                    "<tr>" +
-                        "<td><b>Country Name</b></td>" +
-                        "<td><b>Region</b></td>" +
-                        "<td><b>Income</b></td>" +
-                    "</tr>" +
-                "</thead>" +
-                "<tbody id='table_body" + n + "'>" +
-                "</tbody>" +
-             "</table>"
-            );
-    
-//    // iterate through children
-//    snap.forEach(function(data){
-//        var b = $('#table_body' + n);
-//        
-//        var country = data.val();
-//        
-//        b.append("<tr><td>" + country.CountryName +  "</td><td>" + country.Region + "</td>" + "</td><td>" + country.Income + "</td><tr>");
-//        
-//        // iterate through values of each series
-//        data.forEach(function(sdata){
-//            
-//
-//        });
-//        
-//    });
-//        
-//    n++;
-    
     // iterate through nodes
     snap.forEach(function(data){
         
-        var b = $('#table_body' + n);
+        var b = $('#table_body');
         
         // iterate through values of each node
         data.forEach(function(cdata){
             
             var country = cdata.val();
-        
-            b.append("<tr><td>" + country.CountryName +  "</td><td>" + country.Region + "</td>" + "</td><td>" + country.Income + "</td><tr>");
+            
+            var sInfo = country.SE_XPD_MTOT_ZS;
+            
+            var sRef = cdata.child('SE_XPD_MTOT_ZS');
+            
+            sRef.forEach(function(sData){
+                if(sData.key != "SeriesName"){
+                    if(sData.key != "SeriesCategory"){
+                        b.append("<tr><td>" + country.CountryName +  "</td><td>" + 
+                         country.Region + "</td>" + "</td><td>" + 
+                         sData.key + "</td><td>" + 
+                         sData.val() + "</td></tr>");
+                    }
+                }
+            });
             
         });
         
     });
-        
-    n++;
+    
 });
 
 

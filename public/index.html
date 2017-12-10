@@ -18,10 +18,20 @@
     
     <body>
         
-        <div id="monitor">
+        <div id="local">
+            Local
+            <button id="lRead">Read</button>
+            <button id="lWrite">Write</button>
+        </div>
         
+        <div id="global">
+            Global
+            <button id="gRead">Read</button>
+            <button id="gWrite">Write</button>
+        </div>
+        
+        <div id="monitor">
             <div id="screen">
-                
                 <div id="console">
                     <div id="nodelog">
                         <p class="node_1" id="n1log1">N1:\Log> T1 START </p>
@@ -40,16 +50,29 @@
                 
                 <div id="table-window">
                     <div id="window-topbar">
-                        <span>Node 1 Tables</span>
-                        <a class="window-btn" id="window-close" href=""> </a>
-                        <a class="window-btn" id="window-maximize" href=""></a>
-                        <a class="window-btn" id="window-minimize" href=""></a>
+                        <span id="wtitle">Node 1 Tables - All Regions</span>
+                        <button class="window-btn" id="window-close"> </button>
+                        <button class="window-btn" id="window-maximize"></button>
+                        <button class="window-btn" id="window-minimize"></button>
                     </div>
                     
                     <div id="window-content">
+                        <table>
+                            <thead id="table_head">
+                                <tr>
+                                    <td><b>Country Name</b></td>
+                                    <td><b>Region</b></td>
+                                    <td><b>Year</b></td>
+                                    <td><b>Total Compensation</b></td>
+                                </tr>
+                            </thead>
+                            
+                            <tbody id="table_body">
+                                
+                            </tbody>
+                         </table>
                     </div>
                 </div>
-                
             </div>
             
             <a class="btn" href="node3.html"></a>

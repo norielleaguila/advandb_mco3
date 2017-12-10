@@ -15,32 +15,45 @@ button{
     border-style:none;
 }
 
+button:hover{
+    background-color: deepskyblue;
+}
+
 table{
     font-size: 9pt;
+    border-spacing: 10px;
 }
 
-#navbar{
-    background-color: black;
-    
-    width:75%;
-    
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
+#local, #global{
+    position: absolute;
+    width: 8%;
     padding: 10px;
-    
     text-align: center;
-    
-    z-index:100;
+    z-index: 100;
+    top: 30%;
 }
 
-#navbar a{
-    color: blanchedalmond;
+#local{
+    left: 10;
 }
 
-#navbar a:hover{
-    color: deepskyblue;
+#global{
+    right: 10;
+}
+
+#lRead, #lWrite, #gRead, #gWrite{
+    background-color:lightblue;
+    color: grey;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#lRead:hover, #lWrite:hover, #gRead:hover, #gWrite:hover{
+    background-color: deepskyblue;
+    color: white;
 }
 
 #monitor{
@@ -70,6 +83,8 @@ table{
     margin-bottom: 2px;
     
     padding: 20px;
+    
+    border-radius: 2px;
 }
 
 .btn{
