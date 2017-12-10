@@ -1,0 +1,32 @@
+[debug] [2017-12-10T19:35:23.918Z] ----------------------------------------------------------------------
+[debug] [2017-12-10T19:35:23.920Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Norielle\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-12-10T19:35:23.920Z] CLI Version:   3.16.0
+[debug] [2017-12-10T19:35:23.920Z] Platform:      win32
+[debug] [2017-12-10T19:35:23.920Z] Node Version:  v8.9.3
+[debug] [2017-12-10T19:35:23.921Z] Time:          Mon Dec 11 2017 03:35:23 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-12-10T19:35:23.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-10T19:35:23.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-10T19:35:23.931Z] > authorizing via signed-in user
+[debug] [2017-12-10T19:35:23.933Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/advanmco3  
+  
+ Mon Dec 11 2017 03:35:23 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-12-10T19:35:25.311Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-10T19:35:25.312Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/advanmco3/tokens  
+  
+ Mon Dec 11 2017 03:35:25 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-12-10T19:35:26.278Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Norielle\Desktop\advandb'...
+[info] 
+[debug] [2017-12-10T19:35:26.284Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/advanmco3  
+  
+ Mon Dec 11 2017 03:35:26 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-12-10T19:35:27.978Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-10T19:35:27.980Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/586186740637/clients/_:getWebAppConfig  
+  
+ Mon Dec 11 2017 03:35:27 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2017-12-10T19:35:30.373Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
